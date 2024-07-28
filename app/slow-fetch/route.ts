@@ -46,8 +46,7 @@ export async function POST(req: NextRequest) {
     await kv.set<RelayRequestStateValue>(
       uniqueId,
       {
-        // data: txData.transaction,
-        data: "0x151471b99bead61ade2ea20ffdc1f261f970a601545bfee2853463c18f7bda54",
+        data: txData.transaction,
         status: "success",
         timestamp: new Date().getTime(),
       },
@@ -55,8 +54,7 @@ export async function POST(req: NextRequest) {
     );
 
     return NextResponse.json({
-      // data: txData.transaction,
-      data: "0x151471b99bead61ade2ea20ffdc1f261f970a601545bfee2853463c18f7bda54",
+      data: txData.transaction,
       status: "success",
       timestamp: new Date().getTime(),
     });
