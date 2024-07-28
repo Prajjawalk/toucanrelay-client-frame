@@ -10,15 +10,14 @@ const handler = frames(async () => {
       </div>
     ),
     buttons: [
-      // With query params
-      // <Button
-      //   action="post"
-      //   target={{ pathname: "/route1", query: { foo: "bar" } }}
-      // >
-      //   Go to route 1
-      // </Button>,
       <Button action="post" target="/to">
         Start
+      </Button>,
+      <Button
+        action="link"
+        target="https://steadfast-sled-5ba.notion.site/ToucanRelay-Bot-Docs-f26c7736b85d4eaaa7aea5ceb67cf988"
+      >
+        Docs
       </Button>,
     ],
   };
