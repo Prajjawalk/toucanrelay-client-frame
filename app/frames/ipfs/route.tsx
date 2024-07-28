@@ -12,7 +12,11 @@ export const POST = frames(async (ctx) => {
   };
 
   return {
-    image: <div tw="flex">Enter IPFS hash</div>,
+    image: (
+      <div tw="w-full h-full bg-slate-700 text-white text-md flex justify-center items-center">
+        Enter IPFS hash
+      </div>
+    ),
     buttons: [
       <Button action="post" target="/to">
         Back

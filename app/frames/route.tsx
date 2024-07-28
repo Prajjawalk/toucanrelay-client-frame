@@ -4,7 +4,11 @@ import { Button } from "frames.js/next";
 
 const handler = frames(async () => {
   return {
-    image: <div tw="flex">Welcome to Toucanrelay</div>,
+    image: (
+      <div tw="w-full h-full bg-slate-700 text-white text-md flex justify-center items-center">
+        <div>Welcome to Toucanrelay</div>
+      </div>
+    ),
     buttons: [
       // With query params
       // <Button

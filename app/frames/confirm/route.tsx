@@ -13,7 +13,7 @@ export const POST = frames(async (ctx) => {
 
   return {
     image: (
-      <div tw="flex flex-col">
+      <div tw="w-full h-full bg-slate-700 text-white text-md justify-center items-center flex flex-col">
         <div>Review Details:</div>
         <div tw="flex">Address: {ctx.state.account}</div>
         <div tw="flex">IPFS Hash: {updatedState.ipfsHash}</div>

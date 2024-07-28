@@ -15,7 +15,11 @@ export const POST = frames(async (ctx) => {
   };
 
   const initialFrame = {
-    image: <div>Click to Relay transaction</div>,
+    image: (
+      <div tw="w-full h-full bg-slate-700 text-white text-md flex justify-center items-center">
+        Click to Relay transaction
+      </div>
+    ),
     buttons: [
       <Button action="post" target={{ pathname: "/relay" }} key="1">
         Relay
@@ -25,7 +29,11 @@ export const POST = frames(async (ctx) => {
   } satisfies types.FrameDefinition<any>;
 
   const checkStatusFrame = {
-    image: <div>Loading...</div>,
+    image: (
+      <div tw="w-full h-full bg-slate-700 text-white text-md flex justify-center items-center">
+        Loading...
+      </div>
+    ),
     buttons: [
       <Button action="post" target={{ pathname: "/relay" }} key="1">
         Check status
@@ -54,7 +62,11 @@ export const POST = frames(async (ctx) => {
         }
 
         return {
-          image: <div tw="flex">Transaction Successful!</div>,
+          image: (
+            <div tw="w-full h-full bg-slate-700 text-white text-md flex justify-center items-center">
+              Transaction Successful!
+            </div>
+          ),
           buttons: [
             <Button
               action="post"
